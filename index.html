@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蓝莓音乐</title>
+</head>
+<body>
+    <audio id="audio" src="" preload></audio>
+  <div class="bg-box"></div>
+   <div class="music">
+       <div class="content">
+        <div class="header">
+            <div class="nav-left">
+                <span class="login">
+                    <img src="images/blueberry.png" alt="">
+                </span>
+                <span>小甜馨</span>
+                <span>SVIP</span>
+                <span>Lv5</span>
+                <span><img src="images/cloud1.png" alt=""></span>
+            </div>
+            <div class="nav-r ">
+                <div class="fle">
+                    <div class="search">
+                        <input class="fle search-inp" type="text" placeholder="请输入查找的歌曲" />
+                        <i class="search-btn iconfont icon-shousuo"></i>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <!-- 侧边栏 -->
+           <div class="aside">
+            <div class="a1">
+                <ul class="a1-icons">
+                    <li><img src="images/music.png" alt=""></li>
+                    <li><img src="images/cloud.png" alt=""></li>
+                    <li><img src="images/fi.png" alt=""></li>
+                    <li><img src="images/phone.png" alt=""></li>
+                    <li><img src="images/load.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="aside-nav">
+                <div class="active" data-index="hotSong" data-count="hotCount">
+                  <span>热门歌曲 <i class="line"></i></span>
+                </div>
+                <div data-index="recentSong" data-count="recentCount">
+                  <span>最近播放 <i class="line"></i></span>
+                </div>
+                <div data-index="likeSong" data-count="likeCount">
+                  <span>我的收藏 <i class="line"></i></span>
+                </div>
+              </div>
+                 <!-- 歌曲列表 -->
+                 <div class="song-list">
+                    <div id="hotSong" class="show"></div>
+                    <div id="recentSong"></div>
+                    <div id="likeSong"></div>
+                </div>    
+            </div>
+            <!-- 右边内容 -->
+            <div class="right-content">
+                <div class="navigate">
+                    <div class="active b1">
+                        <span>歌曲 <i class="line"></i></span>
+                      </div>
+                      <div class="b1">
+                        <span>歌词 <i class="line"></i></span>
+                      </div>
+                      <div class="b1">
+                        <span>MV <i class="line"></i></span>
+                      </div>
+                </div>
+                <!-- 歌词 -->
+                <div class="song-word-box">
+                    <div class="song-word">
+                        <ul class="song-word-list">
+                        </ul>
+                      </div>
+                </div>
+                
+            </div>
+        </div>
+       </div>
+       <div class="footer">
+           <div class="f1 footer-icons">
+               <span class="prev"></span>
+               <span id="play-pause" class="play-pause" data-play="0"></span>
+               <span class="next"></span>
+           </div>
+           <div class="f2">
+               <div class="singer-name"></div>
+               <div class="progress">
+                   <div class="progress-notactive">
+                       <!-- 激活层 -->
+                       <div class="progress-active"></div>
+                       <!-- 滑块 -->
+                       <div class="mask"></div>
+                   </div>
+                   <!-- 绑定事件层 -->
+                   <div class="layer"></div>
+               </div> 
+           </div>
+           <div class="f3">
+               <div class="speed">倍数</div>
+               <div class="time">
+                   <span id="cu">00:00</span>/
+                   <span id="du">00:00</span>
+               </div>
+           </div>
+           <div class="f4">
+               <div class="f4-box">
+                <span class="collection">
+                    <img src="./images/like1.png" alt="">
+                </span>
+                <span class="load">
+                    <img src="./images/download.png" alt="">
+                </span>
+                <span class="more"><img src="./images/more.png" alt=""></span>
+                <span id="mode" name="0" title="列表循环">
+                    <!-- 0-列表循环，1-随机播放，2-单曲循环 -->
+                    <img class="auto-img" src="./images/list.png" alt="">
+                </span>
+                <span class="yin">
+                    <img src="./images/yinliang.png" alt="">
+                </span>
+                <span class="sound">
+                    <img src="./images/sound.png" alt="">
+                </span>
+                <span class="word">
+                    <img src="./images/word.png" alt="">
+                </span>
+                <span class="comment">
+                    <img src="./images/comment.png" alt="">
+                </span>
+                <span class="word">
+                    <img src="./images/playlist.png" alt="">
+                </span>
+               </div>
+               
+           </div>
+        </div>
+   </div> 
+</body>
+</html>
